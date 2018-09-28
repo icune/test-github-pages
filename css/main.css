@@ -1,0 +1,51 @@
+body {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url("../img/space.jpg")
+}
+
+.cat {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.cat .pic {
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.5s;
+}
+
+.cat .cat-in {
+	background-image: url("../img/kisechka2.png");
+	opacity: 0;
+}
+.cat .cat-out {
+	background-image: url("../img/kisechka1.png");
+}
+
+.cat:hover .cat-in {
+	opacity: 1;
+}
+
+.button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            margin: 5px;
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
